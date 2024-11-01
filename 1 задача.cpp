@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool isValidOctal(const string& octal) {
+bool is_octal(const string& octal) {
     for (char c : octal) {
         if ( c > '7') {
             return 0;
@@ -48,7 +48,7 @@ int main() {
     cout << "Введите восьмеричное число: ";
     cin >> oct_n;
 
-    if (!isValidOctal(oct_n)) {
+    if (!is_octal(oct_n)) {
             cout << "Ошибка: введено не восьмеричное число!" << endl;
             return 1;
         }
